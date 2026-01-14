@@ -1,0 +1,54 @@
+using System;
+
+class Person
+{   
+    public string _givenName;
+    public string _familyName;
+
+    public Person(string givenName, string familyName)
+    {
+        
+        this._givenName = givenName;
+        this._familyName = familyName;
+
+    }
+
+    public void ShowEasternName()
+    {
+            Console.WriteLine($"{_familyName}, {_givenName}"); 
+    }
+
+    public void ShowWesternName ()
+    {
+            Console.WriteLine($"{_givenName} {_familyName}");
+            
+    }
+    public void ShowCompany()
+    {
+        Console.WriteLine(job1._company);
+    }
+
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        Person person = new Person("Alexis", "Garcia");
+        person.ShowWesternName ();
+        person.ShowEasternName();
+
+        Person person2 = new Person ("Maria", "Lopez");
+        person2.ShowEasternName();
+        person2.ShowWesternName();
+
+        Job job1 = new Job();
+        job1._jobTitle ="Sorftware Engineer";
+        job1._company = "Microsoft";
+        job1._startYear = 2020;
+        job1._endYear = 0023;
+
+
+    }
+}
