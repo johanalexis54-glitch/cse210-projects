@@ -2,9 +2,9 @@ using System;
 
 class Entry
 {
-    private DateTime date;
-    private string prompt;
-    private string text;
+    public DateTime date {get;}
+    public string prompt {get;}
+    public string text {get;}
 
     public Entry(DateTime date, string prompt, string text)
     {
@@ -15,6 +15,8 @@ class Entry
 
     public void Display()
     {
-        
+        Console.WriteLine($"{date.ToShortDateString()} - prompt: {prompt}");
+        Console.WriteLine($"Response: {text}");
+        Console.WriteLine("----------------------------------------------------");
     }
 }

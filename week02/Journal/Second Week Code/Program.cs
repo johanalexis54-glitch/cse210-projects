@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-
 class Program
 {
     static void Main(string[] args)
@@ -18,8 +17,8 @@ class Program
             Console.WriteLine("4. Load journal to file");
             Console.WriteLine("5. Quit");
             Console.WriteLine("Chosse an option: ");
-            string choice = Console.ReadLine();
             
+            string choice = Console.ReadLine();
             switch (choice)
             {
                 case "1":
