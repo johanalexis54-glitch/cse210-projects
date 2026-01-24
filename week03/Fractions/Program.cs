@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        Ingr frac = new Ingr(3,4);
+        frac.Display();
     }
 }

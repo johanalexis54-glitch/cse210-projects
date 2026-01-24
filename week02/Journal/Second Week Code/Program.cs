@@ -1,8 +1,7 @@
 using System;
 using System.Collections;
 class Program
-{
-    static void Main(string[] args)
+{    static void Main(string[] args)
     {
         Journal journal = new Journal();
         PromptGenerator promptGenerator = new PromptGenerator();

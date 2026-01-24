@@ -1,5 +1,5 @@
 using System;
-
+BitConverter  
 class Entry
 {
     public DateTime date {get;}
