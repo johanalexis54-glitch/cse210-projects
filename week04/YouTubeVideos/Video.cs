@@ -7,7 +7,7 @@ class Video
     private string _title;
     private string _author;
     private int _length;
-    private List<Comment> _comment;
+    private List<Comment> _comments = new List<Comment>();
         // Properties: They allow controlled access to the fields
     public string Title
     {
@@ -19,7 +19,7 @@ class Video
         get{return _author;}
         set{_author = value;}
     }
-    public string Length
+    public int Length
     {
         get{return _length;}
         set{_length = value;}
@@ -31,13 +31,24 @@ class Video
             _author = author;
             _length = length;
         }
-    public void AddComment(Comment comment)
+    public void AddComment(Comment comments)
     {
-        _comment.Add(comment);
+        _comments.Add(comments);
     }
     public int GetNumberOfComents()
     {
-        return _comment.Count;
+        return _comments.Count;
     }
-    
+    public void DisplayVideoDetails()
+    {
+        Console.WriteLine($"{_title}: {_author}  {_length} Seconds");
+        Console.WriteLine($"Comments Noun {GetNumberOfComents()}");
+        Console.WriteLine($"Comentarios: ");
+
+
+        foreach (Comment c in _comments)
+        {
+            c.DisplayComment();
+        }
+    }
 }

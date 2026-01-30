@@ -20,7 +20,6 @@ public class Comment
         get { return _text; } 
         set { _text = value; } 
     }
-
     public void DisplayComment()
     {
         Console.WriteLine($"{_name}: {_text}");
