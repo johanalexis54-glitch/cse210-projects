@@ -1,0 +1,19 @@
+using System;
+puclic class Customer
+{
+    private string name;
+    private Address _address;
+
+    public Customer(string name, Address address)
+    {
+        _name = name;
+        _address = address;
+    }
+    public boll IsInUSA()
+    {
+        return _address.IsInUSA();
+    }
+
+    public string GetName() => _name;
+    public Address GetAddress() => _address;
+}
