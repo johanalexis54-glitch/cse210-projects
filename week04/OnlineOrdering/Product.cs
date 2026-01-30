@@ -1,13 +1,11 @@
-using System;
-using System.Net.Sockets;
 public class Product
 {
-    private string name;
-    private int _id;
-    private float _price;
+    private string _name;
+    private string _id;   
+    private decimal _price; 
     private int _quantity;
 
-    public Product(string name, int id, float price, int quantity, )
+    public Product(string name, string id, decimal price, int quantity)
     {
         _name = name;
         _id = id;
@@ -16,12 +14,10 @@ public class Product
     }
     
     public string GetName() => _name;
-    public int GetId() => _id;
+    public string GetId() => _id;
 
     public decimal GetTotalCost()
     {
-        return _price * _quiantity;
-     
+        return _price * _quantity;
     }
-
 }

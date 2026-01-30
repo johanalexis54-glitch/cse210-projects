@@ -1,7 +1,7 @@
 using System;
-puclic class Customer
+public class Customer
 {
-    private string name;
+    private string _name;
     private Address _address;
 
     public Customer(string name, Address address)
@@ -9,7 +9,7 @@ puclic class Customer
         _name = name;
         _address = address;
     }
-    public boll IsInUSA()
+    public bool IsInUSA()
     {
         return _address.IsInUSA();
     }

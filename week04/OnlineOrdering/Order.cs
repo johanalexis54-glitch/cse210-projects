@@ -19,14 +19,10 @@ public class Order
     public decimal CalculateTotal()
     {
         decimal total = 0;
-        
-        // Sumar el costo de cada producto
         foreach (Product p in _products)
         {
             total += p.GetTotalCost();
         }
-
-        // Calcular costo de envío según la ubicación del cliente
         if (_customer.IsInUSA())
         {
             total += 5;
