@@ -1,9 +1,23 @@
 using System;
 
-class Program
+public class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Homework Project.");
+        Assignment assignment1 = new Assignment("Samuel Bennet", "Multiplication");
+        Console.WriteLine(assignment1.GetSummary());
+
+        Console.WriteLine();
+
+        MathAssignment math1 = new MathAssignment("Roberto Rodriguez", "Fractions", "7.3", "8-9");
+        Console.WriteLine(math1.GetSummary());
+        Console.WriteLine(math1.GetHomeworkList());
+
+        Console.WriteLine();
+
+        
+
+
+
     }
 }
