@@ -15,7 +15,9 @@ public class Program
 
         Console.WriteLine();
 
-        
+        WritingAssignment write1 = new WritingAssignment("Alexis Sanchez", "The tries","All tries");
+        Console.WriteLine(write1.GetWritingInformation());
+
 
 
 
